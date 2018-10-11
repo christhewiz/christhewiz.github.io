@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Projects</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="myband.html">My Band</a></li>
+    <li><a href="miniprojects.html">Mini Projects</a></li>
+</ul>
+<form name="project3">
+    <h4>Grade Converter</h4>
+    Please type a numeric score to convert: <input type="text" name="num1">
+    <br>
+    <button type="button" onclick="document.project3.results.value=assignGrade()">Convert!</button>
+    <br>
+    <input type="text" readonly="true" name="results" style="border-style: none">
+</form>
+<br>
+<form name="project4">
+    <h4>Temperature Bug</h4>
+    Please type a temperature to get the season: <input type="text" name="num1">
+    <br>
+    <button type="button" onclick="document.project4.results.value=temperatureBug()">Get Season</button>
+    <br>
+    <img id="weather" src="" height="75">
+    <input type="text" readonly="true" name="results" style="border-style: none" size="40">
+</form>
+
+</body>
+</html>
