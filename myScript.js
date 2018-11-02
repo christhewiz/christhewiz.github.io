@@ -1,4 +1,5 @@
-function assignGrade() {
+function assignGrade()
+{
     //capture a score from html
     var score = Number(document.project3.num1.value);
     if (score >= 90) //that's an A
@@ -19,11 +20,12 @@ function assignGrade() {
     }
 }
 
-function temperatureBug(){
+function temperatureBug()
+{
     var temperature = Number(document.project4.num1.value);
     if (temperature >= 120){
         return "I'm pretty sure you live in the underworld.";
-        document.getElementById('weather').src='img/underworld.jpg';
+        document.getElementById('weather').src="img/underworld.jpg";
     }
     else if (temperature >= 80)
     {
@@ -47,3 +49,4 @@ function temperatureBug(){
         document.getElementById('weather').src='img/antarctica.jfif';
     }
 }
+
