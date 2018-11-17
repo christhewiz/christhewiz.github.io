@@ -24,6 +24,23 @@
 </form>
 <br>
 
+Number to Convert: 
+<input type = "text" name = "num1" id = "num1">
+<input type="button" value="Convert" onclick="binaryConverter()">
+<br><br>
+<script type = "text/javascript">
+    function binaryConverter()
+    {
+        var x = document.getElementById("num1").value;
+        x = parseInt(x);
+        var bin = x.toString(2);
+
+
+        var answer = alert(x + " converted to binary is: " + bin)
+
+        document.getElementById("result").innerHTML = answer;
+    }
+    </script>
 
 </body>
 </html>
